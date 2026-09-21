@@ -8,5 +8,6 @@ scoop bucket add zid https://github.com/gstrainovic/scoop-zid
 scoop install zid/zid
 ```
 
-The manifest is maintained in the zid repository under `packaging/scoop/zid.json` and copied
-here on each release.
+`bucket/zid.json` follows new zid releases on its own: the Excavator workflow runs every
+four hours, checks the latest GitHub release (`checkver`) and updates version, URL and hash
+(`autoupdate`).
